@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController" customModule="Delegate" customModuleProvider="target">
+            <connections>
+                <outlet property="textField" destination="qCo-sf-iVM" id="ktr-bd-14q"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="CS8-IK-SP8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your text here and click button" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qCo-sf-iVM" userLabel="Text Field">
+                    <rect key="frame" x="75.5" y="339" width="263" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCu-Cs-tJl">
+                    <rect key="frame" x="176" y="396" width="62" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="62" id="6Bq-5D-qhO"/>
+                        <constraint firstAttribute="height" constant="35" id="h3T-Ww-Igx"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Push"/>
+                    <connections>
+                        <action selector="navigateToSecondViewAction:" destination="-1" eventType="touchUpInside" id="90l-bz-4LV"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="qCo-sf-iVM" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="-99" id="CSU-k7-LmQ"/>
+                <constraint firstItem="qCo-sf-iVM" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="N6T-WC-uPy"/>
+                <constraint firstItem="jCu-Cs-tJl" firstAttribute="top" secondItem="qCo-sf-iVM" secondAttribute="bottom" constant="23" id="sul-tT-cJb"/>
+                <constraint firstItem="jCu-Cs-tJl" firstAttribute="centerX" secondItem="qCo-sf-iVM" secondAttribute="centerX" id="xZX-ZY-sKi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jCu-Cs-tJl" secondAttribute="trailing" constant="176" id="xed-Sh-8I7"/>
+            </constraints>
+            <point key="canvasLocation" x="113.04347826086958" y="-11.383928571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
