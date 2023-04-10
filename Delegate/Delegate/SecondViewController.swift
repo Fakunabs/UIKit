@@ -7,23 +7,40 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+protocol dataSendToSecondController {
 
+    func data(text: String)
+}
+
+class SecondViewController: UIViewController {
+    
+    var delegate: dataSendToSecondController?
+    
+    var receiveddata: String?
+    
+    @IBOutlet weak var textFieldViewSecond: UITextField!
+    
+
+    @IBAction func returnButtonSecondView(_ sender: UIButton) {
+        // click on the button to return to the first view
+        delegate?.data(text: textFieldViewSecond.text!)
+        
+        self.navigationController?.popViewController(animated: true)
+        
+        
+    }
+    
+    
+    
+    
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        title = "Second View Controller"
+        textFieldViewSecond.text = receiveddata
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

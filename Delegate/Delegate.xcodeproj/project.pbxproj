@@ -115,8 +115,8 @@
 				1CA4F28629E0217400D3A413 /* LaunchScreen.storyboard */,
 				1CA4F28929E0217400D3A413 /* Info.plist */,
 				1C71FDFF29E3BCB100692EE1 /* FirstViewController.swift */,
-				1C71FE0029E3BCB100692EE1 /* FirstViewController.xib */,
 				1C71FE0329E3C86700692EE1 /* SecondViewController.swift */,
+				1C71FE0029E3BCB100692EE1 /* FirstViewController.xib */,
 				1C71FE0429E3C86700692EE1 /* SecondViewController.xib */,
 			);
 			path = Delegate;
