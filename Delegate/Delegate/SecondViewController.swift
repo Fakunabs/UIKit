@@ -12,30 +12,22 @@ protocol dataSendToSecondController {
     func data(text: String)
 }
 
+typealias text = (String) -> ()
+
 class SecondViewController: UIViewController {
-    
-    var delegate: dataSendToSecondController?
+
+    var closure: text!
     
     var receiveddata: String?
     
     @IBOutlet weak var textFieldViewSecond: UITextField!
-    
 
     @IBAction func returnButtonSecondView(_ sender: UIButton) {
-        // click on the button to return to the first view
-        delegate?.data(text: textFieldViewSecond.text!)
         
-        self.navigationController?.popViewController(animated: true)
-        
+        guard let text = textFieldViewSecond.text else {return}
+        closure(text)
         
     }
-    
-    
-    
-    
-
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

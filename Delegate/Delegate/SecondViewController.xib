@@ -20,14 +20,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your text here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wpa-9u-yuX">
-                    <rect key="frame" x="129.5" y="340" width="155.5" height="34"/>
+                    <rect key="frame" x="129.5" y="340" width="155" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pl5-kI-lQv">
-                    <rect key="frame" x="169.5" y="394" width="75" height="35"/>
+                    <rect key="frame" x="176.5" y="394" width="61" height="35"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="Return"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Save"/>
                     <connections>
                         <action selector="returnButtonSecondView:" destination="-1" eventType="touchUpInside" id="K4N-3c-DxV"/>
                     </connections>
