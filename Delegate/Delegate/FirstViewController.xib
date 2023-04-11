@@ -33,7 +33,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3b-M0-ErQ">
-                    <rect key="frame" x="162.5" y="450" width="89.5" height="35"/>
+                    <rect key="frame" x="162.5" y="450" width="89" height="35"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title="Click me"/>
                     <connections>
