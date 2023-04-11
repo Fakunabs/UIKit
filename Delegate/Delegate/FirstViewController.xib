@@ -32,16 +32,26 @@
                         <action selector="navigateToSecondViewAction:" destination="-1" eventType="touchUpInside" id="90l-bz-4LV"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3b-M0-ErQ">
+                    <rect key="frame" x="162.5" y="450" width="89.5" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Click me"/>
+                    <connections>
+                        <action selector="navigateToThirdViewAction:" destination="-1" eventType="touchUpInside" id="Fqc-sE-9Gd"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="jCu-Cs-tJl" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="9q8-zZ-qa2"/>
+                <constraint firstItem="P3b-M0-ErQ" firstAttribute="top" secondItem="jCu-Cs-tJl" secondAttribute="bottom" constant="23" id="Lfh-A1-jil"/>
+                <constraint firstItem="P3b-M0-ErQ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="MpX-uw-APJ"/>
                 <constraint firstItem="qCo-sf-iVM" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="N6T-WC-uPy"/>
                 <constraint firstItem="jCu-Cs-tJl" firstAttribute="top" secondItem="qCo-sf-iVM" secondAttribute="bottom" constant="20" id="XGG-6Z-6ar"/>
                 <constraint firstItem="jCu-Cs-tJl" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="-45.5" id="oNA-mf-Swq"/>
             </constraints>
-            <point key="canvasLocation" x="112.5" y="-11.594202898550726"/>
+            <point key="canvasLocation" x="111.59420289855073" y="-12.053571428571429"/>
         </view>
     </objects>
     <resources>
