@@ -26,11 +26,16 @@ class FirstViewController: UIViewController, dataSendToSecondController {
         vc.receiveddata = textField.text
         
         self.navigationController?.pushViewController(vc, animated: true)
-        
-        
     }
     
-
+    @IBAction func navigateToThirdViewAction(_ sender: UIButton) {
+        let vc = ThirdViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
