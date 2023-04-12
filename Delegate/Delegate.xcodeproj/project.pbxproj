@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C09E82729E65E7F00EE93B7 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C09E82529E65E7F00EE93B7 /* FourthViewController.swift */; };
+		1C09E82829E65E7F00EE93B7 /* FourthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C09E82629E65E7F00EE93B7 /* FourthViewController.xib */; };
+		1C09E82F29E66CD500EE93B7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C09E82D29E66CD500EE93B7 /* TableViewCell.swift */; };
+		1C09E83029E66CD500EE93B7 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C09E82E29E66CD500EE93B7 /* TableViewCell.xib */; };
 		1C71FE0129E3BCB100692EE1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C71FDFF29E3BCB100692EE1 /* FirstViewController.swift */; };
 		1C71FE0229E3BCB100692EE1 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C71FE0029E3BCB100692EE1 /* FirstViewController.xib */; };
 		1C71FE0529E3C86700692EE1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C71FE0329E3C86700692EE1 /* SecondViewController.swift */; };
@@ -42,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C09E82529E65E7F00EE93B7 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		1C09E82629E65E7F00EE93B7 /* FourthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthViewController.xib; sourceTree = "<group>"; };
+		1C09E82D29E66CD500EE93B7 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		1C09E82E29E66CD500EE93B7 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		1C71FDFF29E3BCB100692EE1 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		1C71FE0029E3BCB100692EE1 /* FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
 		1C71FE0329E3C86700692EE1 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -121,9 +129,13 @@
 				1C71FDFF29E3BCB100692EE1 /* FirstViewController.swift */,
 				1C71FE0329E3C86700692EE1 /* SecondViewController.swift */,
 				1CC7E60E29E517FE00189F2A /* ThirdViewController.swift */,
+				1C09E82529E65E7F00EE93B7 /* FourthViewController.swift */,
+				1C09E82D29E66CD500EE93B7 /* TableViewCell.swift */,
 				1C71FE0029E3BCB100692EE1 /* FirstViewController.xib */,
 				1C71FE0429E3C86700692EE1 /* SecondViewController.xib */,
 				1CC7E60F29E517FE00189F2A /* ThirdViewController.xib */,
+				1C09E82629E65E7F00EE93B7 /* FourthViewController.xib */,
+				1C09E82E29E66CD500EE93B7 /* TableViewCell.xib */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
@@ -253,6 +265,8 @@
 				1CA4F28529E0217400D3A413 /* Assets.xcassets in Resources */,
 				1CC7E61129E517FE00189F2A /* ThirdViewController.xib in Resources */,
 				1CA4F28329E0217100D3A413 /* Main.storyboard in Resources */,
+				1C09E82829E65E7F00EE93B7 /* FourthViewController.xib in Resources */,
+				1C09E83029E66CD500EE93B7 /* TableViewCell.xib in Resources */,
 				1C71FE0229E3BCB100692EE1 /* FirstViewController.xib in Resources */,
 				1C71FE0629E3C86700692EE1 /* SecondViewController.xib in Resources */,
 			);
@@ -280,8 +294,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CA4F28029E0217100D3A413 /* ViewController.swift in Sources */,
+				1C09E82F29E66CD500EE93B7 /* TableViewCell.swift in Sources */,
 				1CA4F27C29E0217100D3A413 /* AppDelegate.swift in Sources */,
 				1CA4F27E29E0217100D3A413 /* SceneDelegate.swift in Sources */,
+				1C09E82729E65E7F00EE93B7 /* FourthViewController.swift in Sources */,
 				1C71FE0529E3C86700692EE1 /* SecondViewController.swift in Sources */,
 				1CC7E61029E517FE00189F2A /* ThirdViewController.swift in Sources */,
 				1C71FE0129E3BCB100692EE1 /* FirstViewController.swift in Sources */,
