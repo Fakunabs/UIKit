@@ -12,11 +12,9 @@ protocol dataSendToSecondController {
     func data(text: String)
 }
 
-typealias text = (String) -> ()
-
 class SecondViewController: UIViewController {
 
-    var closure: text!
+    var closure: ((String) -> ())?
     
     var receiveddata: String?
     
@@ -25,7 +23,7 @@ class SecondViewController: UIViewController {
     @IBAction func returnButtonSecondView(_ sender: UIButton) {
         
         guard let text = textFieldViewSecond.text else {return}
-        closure(text)
+        closure?(text)
         
     }
     override func viewDidLoad() {
