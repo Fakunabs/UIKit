@@ -24,7 +24,7 @@ class FirstViewController: UIViewController /* dataSendToSecondController */ {
     }
     
     @IBAction func navigateToThirdViewAction(_ sender: UIButton) {
-        let vc = ThirdViewController()
+        let vc = FourthViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
 
