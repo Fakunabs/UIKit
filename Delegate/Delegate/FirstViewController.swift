@@ -28,6 +28,11 @@ class FirstViewController: UIViewController /* dataSendToSecondController */ {
         self.navigationController?.pushViewController(vc, animated: true)
     }
 
+    @IBAction func navigateToSixthViewAction(_ sender: UIButton) {
+        let vc = SixthViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
