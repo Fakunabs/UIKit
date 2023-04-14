@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -24,19 +24,19 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcs-HM-P5b">
-                        <rect key="frame" x="133" y="55" width="205" height="21"/>
+                        <rect key="frame" x="133" y="39" width="205" height="42"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="vcs-HM-P5b" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="55" id="0Gg-5R-Vzj"/>
-                    <constraint firstAttribute="bottom" secondItem="sfg-0f-sGW" secondAttribute="bottom" constant="10" id="8hA-k0-raG"/>
+                    <constraint firstItem="vcs-HM-P5b" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="39" id="0Gg-5R-Vzj"/>
+                    <constraint firstAttribute="bottom" secondItem="sfg-0f-sGW" secondAttribute="bottom" constant="16" id="8hA-k0-raG"/>
                     <constraint firstItem="sfg-0f-sGW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="GcN-p3-hSi"/>
                     <constraint firstAttribute="trailing" secondItem="vcs-HM-P5b" secondAttribute="trailing" constant="20" symbolic="YES" id="OpM-5i-RH5"/>
                     <constraint firstItem="sfg-0f-sGW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Vej-NF-AmO"/>
-                    <constraint firstAttribute="bottom" secondItem="vcs-HM-P5b" secondAttribute="bottom" constant="55" id="ZON-sd-BT6"/>
+                    <constraint firstAttribute="bottom" secondItem="vcs-HM-P5b" secondAttribute="bottom" constant="45" id="ZON-sd-BT6"/>
                     <constraint firstItem="vcs-HM-P5b" firstAttribute="leading" secondItem="sfg-0f-sGW" secondAttribute="trailing" constant="23" id="fWl-SH-Qnp"/>
                     <constraint firstItem="sfg-0f-sGW" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.27933" id="z2b-cs-1dY"/>
                 </constraints>
