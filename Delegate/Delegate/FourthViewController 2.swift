@@ -57,8 +57,8 @@ extension FourthViewController: UITableViewDataSource, UITableViewDelegate, data
         vc.indexPath = indexPath
         self.navigationController?.pushViewController(vc, animated: true)
     }
-        
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 300
-    }
+    
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 100
+//    }
 }   
