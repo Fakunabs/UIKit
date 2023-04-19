@@ -20,16 +20,40 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your text here and click button" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qCo-sf-iVM" userLabel="Text Field">
-                    <rect key="frame" x="75.5" y="338" width="263" height="34"/>
+                    <rect key="frame" x="82.5" y="338" width="263" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3b-M0-ErQ">
+                    <rect key="frame" x="75" y="452" width="101" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="TableView"/>
+                    <connections>
+                        <action selector="navigateToThirdViewAction:" destination="-1" eventType="touchUpInside" id="Fqc-sE-9Gd"/>
+                    </connections>
+                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCu-Cs-tJl">
-                    <rect key="frame" x="176" y="392" width="62" height="35"/>
+                    <rect key="frame" x="75" y="398" width="62" height="35"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title="Push"/>
                     <connections>
                         <action selector="navigateToSecondViewAction:" destination="-1" eventType="touchUpInside" id="90l-bz-4LV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFl-tU-KMS">
+                    <rect key="frame" x="304.5" y="398" width="46.5" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Url"/>
+                    <connections>
+                        <action selector="navigateToSeventhViewAction:" destination="-1" eventType="touchUpInside" id="Pa8-YA-URK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SqP-Qq-qGc">
+                    <rect key="frame" x="176" y="398" width="88" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Side Bar"/>
+                    <connections>
+                        <action selector="navigateToEighthViewAction:" destination="-1" eventType="touchUpInside" id="Ah3-MV-zK5"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NmB-XQ-InB">
@@ -40,26 +64,25 @@
                         <action selector="navigateToSixthViewAction:" destination="-1" eventType="touchUpInside" id="omO-QE-tLJ"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3b-M0-ErQ">
-                    <rect key="frame" x="75" y="452" width="101" height="35"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="TableView"/>
-                    <connections>
-                        <action selector="navigateToThirdViewAction:" destination="-1" eventType="touchUpInside" id="Fqc-sE-9Gd"/>
-                    </connections>
-                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="vFl-tU-KMS" firstAttribute="leading" secondItem="SqP-Qq-qGc" secondAttribute="trailing" constant="40.5" id="3ez-E7-2HH"/>
                 <constraint firstItem="NmB-XQ-InB" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" constant="87" id="9V7-AA-lZe"/>
-                <constraint firstItem="jCu-Cs-tJl" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="9q8-zZ-qa2"/>
-                <constraint firstItem="P3b-M0-ErQ" firstAttribute="top" secondItem="jCu-Cs-tJl" secondAttribute="bottom" constant="25" id="Lfh-A1-jil"/>
+                <constraint firstItem="jCu-Cs-tJl" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" constant="-101" id="9q8-zZ-qa2"/>
+                <constraint firstItem="NmB-XQ-InB" firstAttribute="top" secondItem="vFl-tU-KMS" secondAttribute="bottom" constant="19" id="F1B-qA-No4"/>
+                <constraint firstItem="P3b-M0-ErQ" firstAttribute="top" secondItem="jCu-Cs-tJl" secondAttribute="bottom" constant="19" id="Lfh-A1-jil"/>
                 <constraint firstItem="P3b-M0-ErQ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" constant="-81.5" id="MpX-uw-APJ"/>
-                <constraint firstItem="qCo-sf-iVM" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="N6T-WC-uPy"/>
-                <constraint firstItem="jCu-Cs-tJl" firstAttribute="top" secondItem="qCo-sf-iVM" secondAttribute="bottom" constant="20" id="XGG-6Z-6ar"/>
-                <constraint firstItem="NmB-XQ-InB" firstAttribute="top" secondItem="jCu-Cs-tJl" secondAttribute="bottom" constant="25" id="aHp-nh-fcU"/>
-                <constraint firstItem="jCu-Cs-tJl" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="-45.5" id="oNA-mf-Swq"/>
+                <constraint firstItem="qCo-sf-iVM" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" constant="7" id="N6T-WC-uPy"/>
+                <constraint firstItem="vFl-tU-KMS" firstAttribute="top" secondItem="qCo-sf-iVM" secondAttribute="bottom" constant="26" id="Sa2-1u-C8t"/>
+                <constraint firstItem="jCu-Cs-tJl" firstAttribute="top" secondItem="qCo-sf-iVM" secondAttribute="bottom" constant="26" id="XGG-6Z-6ar"/>
+                <constraint firstItem="SqP-Qq-qGc" firstAttribute="leading" secondItem="jCu-Cs-tJl" secondAttribute="trailing" constant="39" id="ZQY-Ho-i5o"/>
+                <constraint firstItem="NmB-XQ-InB" firstAttribute="top" secondItem="jCu-Cs-tJl" secondAttribute="bottom" constant="19" id="aHp-nh-fcU"/>
+                <constraint firstItem="vFl-tU-KMS" firstAttribute="trailing" secondItem="NmB-XQ-InB" secondAttribute="trailing" id="eUg-hp-cW9"/>
+                <constraint firstItem="SqP-Qq-qGc" firstAttribute="top" secondItem="qCo-sf-iVM" secondAttribute="bottom" constant="26" id="fA4-uW-9Kf"/>
+                <constraint firstItem="jCu-Cs-tJl" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="-39.5" id="oNA-mf-Swq"/>
+                <constraint firstItem="NmB-XQ-InB" firstAttribute="top" secondItem="SqP-Qq-qGc" secondAttribute="bottom" constant="19" id="oZL-zU-yUr"/>
             </constraints>
             <point key="canvasLocation" x="111.59420289855073" y="-12.053571428571429"/>
         </view>
