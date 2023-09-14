@@ -8,13 +8,7 @@
 import UIKit
 
 
-class FirstViewController: UIViewController, dataSendToSecondController {
-    
-    
-    func data(text: String) {
-        textField.text = text
-    }
-    
+class FirstViewController: UIViewController /* dataSendToSecondController */ {
     
     @IBOutlet weak var textField: UITextField!
     
@@ -22,19 +16,33 @@ class FirstViewController: UIViewController, dataSendToSecondController {
     @IBAction func navigateToSecondViewAction(_ sender: UIButton) {
         
         let vc = SecondViewController()
-        vc.delegate = self
-        vc.receiveddata = textField.text
+        vc.closure = {text in
+        self.textField.text = text
+        }
         
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func navigateToThirdViewAction(_ sender: UIButton) {
-        let vc = ThirdViewController()
+        let vc = FourthViewController()
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+
+    @IBAction func navigateToSixthViewAction(_ sender: UIButton) {
+        let vc = SixthViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
+    @IBAction func navigateToSeventhViewAction(_ sender: UIButton) {
+        let vc = SeventhViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     
+    @IBAction func navigateToEighthViewAction(_ sender: UIButton) {
+        let vc = EighthViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,3 +52,5 @@ class FirstViewController: UIViewController, dataSendToSecondController {
     }
     
 }
+
+
